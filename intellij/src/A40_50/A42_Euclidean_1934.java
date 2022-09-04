@@ -54,10 +54,8 @@ public class A42_Euclidean_1934 {
             return a;
         }else{
             int mod = a%b;
-            a=gcd(b, mod);
+            return gcd(b, mod);
         }
-
-        return a;
     }
 
 }
