@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.debug.core.USE_STEP_FILTERS=true
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<watchExpressions>\r\n    <expression enabled\="true" text\="lines[i]"/>\r\n    <expression enabled\="true" text\="i"/>\r\n    <expression enabled\="true" text\="sb"/>\r\n    <expression enabled\="true" text\="sum(i)"/>\r\n    <expression enabled\="true" text\="x"/>\r\n    <expression enabled\="true" text\="y"/>\r\n    <expression enabled\="true" text\="range"/>\r\n    <expression enabled\="true" text\="arrlong[2]"/>\r\n</watchExpressions>\r\n
