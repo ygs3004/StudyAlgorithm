@@ -11,11 +11,19 @@
       <change afterPath="$PROJECT_DIR$/eclipseWorkspace" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/intellij/intellij.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/intellij/src/A40_50/A40_NotPow_1016.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intellij/src/A40_50/A42_Euclidean_1934.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -37,6 +45,7 @@
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
     "last_opened_file_path": "C:/Dev/REPOSITORY/java/algorithm/intelij",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -50,7 +59,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662301166044</updated>
-      <workItem from="1662301167337" duration="961000" />
+      <workItem from="1662301167337" duration="1724000" />
     </task>
     <servers />
   </component>
