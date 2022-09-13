@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f201f83d-6bda-4903-b490-7018c630caa3" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/../../.idea/REPOSITORY.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intellij/src/A40_50/A44_Cocktail_1033.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intellij/intellij.iml" beforeDir="false" afterPath="$PROJECT_DIR$/intellij/intellij.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +59,8 @@
       <workItem from="1662653676593" duration="35000" />
       <workItem from="1662653718817" duration="383000" />
       <workItem from="1662999731618" duration="2780000" />
-      <workItem from="1663003020955" duration="1253000" />
+      <workItem from="1663003020955" duration="1333000" />
+      <workItem from="1663076656213" duration="8093000" />
     </task>
     <servers />
   </component>
@@ -79,5 +77,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/intellij/src/A40_50/A45_AxByC_21568.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
