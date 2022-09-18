@@ -18,17 +18,106 @@ package A40_50;
 */
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class A49_water_2251 {
+    static boolean[][] visited;
+    static boolean[] result;
 
     public static void main(String[] args) throws Exception {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer();
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int a = Integer.parseInt(st.nextToken());
+        int b = Integer.parseInt(st.nextToken());
+        int c = Integer.parseInt(st.nextToken());
 
+        result = new boolean[c+1];
+        visited = new boolean[c+1][c+1];
+        visited[0][0] = true;
 
+        Bottle b1 = new Bottle(a);
+        Bottle b2 = new Bottle(b);
+        Bottle b3 = new Bottle(c, c);
+        result[c]=true;
+        bfs(b1,b2,b3);
+
+        for(int i=0; i<result.length; i++){
+            if(result[i])
+             bw.write(i+" ");
+        }
+
+        bw.flush();
+        bw.close();
+        br.close();
+
+    }
+
+    public static void bfs(Bottle b1, Bottle b2, Bottle b3){
+
+        Queue<Bottle[]> que = new LinkedList<>();
+        Bottle[] bottle = new Bottle[4];
+        bottle[1] = b1; bottle[2] = b2; bottle[3] = b3;
+        que.add(bottle);
+
+        while(!que.isEmpty()){
+
+            Bottle[] now = que.poll();
+            visited[now[1].water][now[2].water] = true;
+
+            for(int i=1; i<=3; i++){  // i는 주는 물통, j는 받는 물통
+                if((now[i].water)==0) continue;
+                for(int j=1; j<=3; j++){
+                    if(i==j) continue;
+                    Bottle[] next = {null,
+                            new Bottle(now[1].size, now[1].water),
+                            new Bottle(now[2].size, now[2].water),
+                            new Bottle(now[3].size, now[3].water)
+                    };
+
+                    if(now[i].water > now[j].size-now[j].water){ // 주는 물이 받는 물통의 크기보다 많은경우
+                        next[j].water = now[j].size;
+                        next[i].water = now[i].water - (now[j].size-now[j].water);
+                    }else{ // 주는 물이 받는 물통의 크기보다 적어 모두 주게 되는경우
+                        next[j].water += now[i].water;
+                        next[i].water = 0;
+                    }
+
+                    if(!visited[next[1].water][next[2].water]){
+                        visited[next[1].water][next[2].water]=true;
+                        que.add(next);
+
+                        if(next[1].water==0) result[next[3].water] = true;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+class Bottle{
+
+    int size;
+    int water=0;
+
+    Bottle(){
+
+    }
+
+    Bottle(int size){
+        this.size = size;
+    }
+
+    Bottle(int size, int water){
+        this.size = size;
+        this.water = water;
     }
 
 }
