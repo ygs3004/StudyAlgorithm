@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f201f83d-6bda-4903-b490-7018c630caa3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/intellij/src/A61_70/A61_FloydWarshall_11404.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intellij/output/production/intellij/A58_/A58_kRoute_1854$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/intellij/output/production/intellij/A58_/A58_kRoute_1854.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/intellij/output/production/intellij/A58_/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/intellij/src/A58_/A58_kRoute_1854.java" beforeDir="false" afterPath="$PROJECT_DIR$/intellij/src/A57_60/a1854/A58_kRoute_1854.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_333/src.zip!/java/lang/NullPointerException.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2EJ66WiHCwh6OjGXOWpWZWhHfTY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "C:/Java Emp Class Lecture 2022-06-15/Spring Frame WorkLecture/intelij",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.appearance"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f201f83d-6bda-4903-b490-7018c630caa3" name="Changes" comment="" />
+      <created>1662301166044</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662301166044</updated>
+      <workItem from="1662301167337" duration="4062000" />
+      <workItem from="1662393011696" duration="20000" />
+      <workItem from="1662653676593" duration="35000" />
+      <workItem from="1662653718817" duration="383000" />
+      <workItem from="1662999731618" duration="2780000" />
+      <workItem from="1663003020955" duration="1333000" />
+      <workItem from="1663076656213" duration="8171000" />
+      <workItem from="1663174969941" duration="236000" />
+      <workItem from="1663417423884" duration="19340000" />
+      <workItem from="1663441900707" duration="6465000" />
+      <workItem from="1663474345627" duration="20636000" />
+      <workItem from="1663547182636" duration="2546000" />
+      <workItem from="1663549977323" duration="22301000" />
+      <workItem from="1663632824960" duration="1538000" />
+      <workItem from="1663639594150" duration="2079000" />
+      <workItem from="1663646486597" duration="8249000" />
+      <workItem from="1663658710475" duration="2230000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/intellij/src/A40_50/A45_AxByC_21568.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/intellij/src/A51_60/A54_GameDev_1516.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/intellij/src/A51_60/A55_Root_1948.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="7" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="indegree[info.get(now).get(i)]" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
