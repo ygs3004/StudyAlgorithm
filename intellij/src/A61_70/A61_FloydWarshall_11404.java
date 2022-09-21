@@ -46,20 +46,20 @@ n개의 줄을 출력해야 한다. i번째 줄에 출력하는 j번째 숫자�
 7 4 10 6 0
 */
 public class A61_FloydWarshall_11404 {
-
+    //플로이드
     public static void main(String[] args) throws Exception{
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-        int inf = Integer.MAX_VALUE;
+        StringTokenizer st;
+        int inf = 999999999;
 
-        int n = Integer.parseInt(st.nextToken());
-        int m = Integer.parseInt(st.nextToken());
+        int n = Integer.parseInt(br.readLine());
+        int m = Integer.parseInt(br.readLine());
         int[][] price = new int[n+1][n+1];
 
         for(int i=1; i<=n; i++){
-            for(int j=1; j<=j; j++){
+            for(int j=1; j<=n; j++){
                 if(i==j)
                     price[i][j] = 0;
                 else
@@ -72,18 +72,24 @@ public class A61_FloydWarshall_11404 {
             int s = Integer.parseInt(st.nextToken());
             int e = Integer.parseInt(st.nextToken());
             int v = Integer.parseInt(st.nextToken());
-            if(price[s][e]>0) price[s][e] = v;
+            if(price[s][e]>v) price[s][e] = v;
         }
 
-        for(int k=0; k<=n; k++){ // 경유지에 관해
-            for(int s=0; s<=n; s++){ // 출발점에 관해
-                for(int e=0; e<=n; e++){ // 도착점에 관해
-                    if(price[s][e] > price[s][k]+price[k][e])
+        for(int k=1; k<=n; k++){ // 경유지에 관해
+            for(int s=1; s<=n; s++){ // 출발점에 관해
+                for(int e=1; e<=n; e++){ // 도착점에 관해
+                    if(price[s][e] > price[s][k] + price[k][e])
                         price[s][e] = price[s][k] + price[k][e];
                 }
             }
         }
 
-
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=n; j++){
+                if(price[i][j]==inf) System.out.print("0 ");
+                else System.out.print(price[i][j]+" ");
+            }
+            System.out.println();
+        }
     }
 }
