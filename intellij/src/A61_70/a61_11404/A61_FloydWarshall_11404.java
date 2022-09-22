@@ -1,4 +1,4 @@
-package A61_70;
+package A61_70.a61_11404;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
