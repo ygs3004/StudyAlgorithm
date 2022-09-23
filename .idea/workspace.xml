@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f201f83d-6bda-4903-b490-7018c630caa3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/intellij/src/A61_70/a67_11725/ParentOfTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intellij/src/A61_70/A61_FloydWarshall_11404.java" beforeDir="false" afterPath="$PROJECT_DIR$/intellij/src/A61_70/a61_11404/A61_FloydWarshall_11404.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "C:/Java Emp Class Lecture 2022-06-15/Spring Frame WorkLecture/intelij/ezen",
+    "last_opened_file_path": "C:/Java Emp Class Lecture 2022-06-15/Algorithm",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -82,7 +82,8 @@
       <workItem from="1663724148120" duration="14870000" />
       <workItem from="1663750085771" duration="45000" />
       <workItem from="1663806648123" duration="3113000" />
-      <workItem from="1663809798564" duration="23266000" />
+      <workItem from="1663809798564" duration="23527000" />
+      <workItem from="1663892678779" duration="23676000" />
     </task>
     <servers />
   </component>
@@ -133,6 +134,16 @@
           <line>130</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/intellij/src/A61_70/a69_14425/SearchString.java</url>
+          <line>66</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/intellij/src/A61_70/a69_14425/SearchString.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="7" />
@@ -141,8 +152,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="indegree[info.get(now).get(i)]" language="JAVA" />
-        <watch expression="snum" language="JAVA" />
+        <watch expression="str" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
