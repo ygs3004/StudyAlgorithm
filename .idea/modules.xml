@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/algorithm.iml" filepath="$PROJECT_DIR$/.idea/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eclipseWorkspace/0home/0home.iml" filepath="$PROJECT_DIR$/eclipseWorkspace/0home/0home.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eclipseWorkspace/0practice/0practice.iml" filepath="$PROJECT_DIR$/eclipseWorkspace/0practice/0practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eclipseWorkspace/1practice_BJ/1practice_BJ.iml" filepath="$PROJECT_DIR$/eclipseWorkspace/1practice_BJ/1practice_BJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eclipseWorkspace/2practice_algoritm/2practice_algoritm.iml" filepath="$PROJECT_DIR$/eclipseWorkspace/2practice_algoritm/2practice_algoritm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Algorithm.iml" filepath="$PROJECT_DIR$/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eclipseWorkspace/algorithm/algorithm.iml" filepath="$PROJECT_DIR$/eclipseWorkspace/algorithm/algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eclipseWorkspace/homework/homework.iml" filepath="$PROJECT_DIR$/eclipseWorkspace/homework/homework.iml" />
       <module fileurl="file://$PROJECT_DIR$/intellij/intellij.iml" filepath="$PROJECT_DIR$/intellij/intellij.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eclipseWorkspace/solved_class2/solved_class2.iml" filepath="$PROJECT_DIR$/eclipseWorkspace/solved_class2/solved_class2.iml" />
     </modules>
   </component>
 </project>
