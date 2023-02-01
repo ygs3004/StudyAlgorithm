@@ -59,7 +59,7 @@ public class SortAge {
 
     }
 
-    static class Person implements Comparable {
+    static class Person implements Comparable<Person> {
 
         int age;
         String name;
@@ -72,19 +72,13 @@ public class SortAge {
         }
 
         @Override
-        public int compareTo(Object anotherPerson) {
-            if (anotherPerson instanceof Person) {
+        public int compareTo(Person newPerson) {
 
-                Person newPerson = (Person) anotherPerson;
-
-                if(this.age != newPerson.age){
-                    return this.age - newPerson.age;
-                }
-                return this.idKey - newPerson.idKey ;
+            if(this.age != newPerson.age){
+                return this.age - newPerson.age;
             }
-            return 0;
+            return this.idKey - newPerson.idKey ;
         }
-
     }
 
 }
