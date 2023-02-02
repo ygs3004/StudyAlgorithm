@@ -25,6 +25,8 @@ x좌표가 같으면 y좌표가 증가하는 순서로 정렬한 다음 출력�
 2 2
 3 3
 3 4
+
+알고리즘 : 정렬
 */
 
 import java.io.*;
@@ -54,6 +56,7 @@ public class SortCoordinates {
             bw.write(nowPoint.x + " " + nowPoint.y+"\n");
         }
 
+        br.close();
         bw.flush();
         bw.close();
     }
