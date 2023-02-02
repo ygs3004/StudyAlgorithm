@@ -103,6 +103,8 @@ WBWWBWBBWWBW
 BWWBWBBWWBWW
 WBWWBWBBWWBW
 -> 15
+
+브루트포스 알고리즘
 */
 
 import java.io.BufferedReader;
