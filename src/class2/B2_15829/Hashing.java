@@ -1,4 +1,4 @@
-package Class2.B2_15829;
+package class2.B2_15829;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

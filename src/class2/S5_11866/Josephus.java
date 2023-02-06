@@ -1,7 +1,6 @@
-package Class2.S5_11866;
+package class2.S5_11866;
 
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.*;
 
 /*

@@ -1,4 +1,4 @@
-package Class2.S5_10814;
+package class2.S5_10814;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

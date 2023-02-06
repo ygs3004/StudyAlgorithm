@@ -15,7 +15,7 @@
 72
 */
 
-package Class2.B1_2609;
+package class2.B1_2609;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
