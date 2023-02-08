@@ -61,16 +61,15 @@ public class QueueProblem {
 
         StringTokenizer st;
         int n = Integer.parseInt(br.readLine());
-        for (int i = 0; i < n; i++) {
-            st = new StringTokenizer(br.readLine());
-            String command = st.nextToken();
-            int pushNum=0;
-            if (st.hasMoreTokens()) {
-                pushNum = Integer.parseInt(st.nextToken());
-            }
+            for (int i = 0; i < n; i++) {
+                st = new StringTokenizer(br.readLine());
+                String command = st.nextToken();
+                int pushNum=0;
+                if (st.hasMoreTokens()) {
+                    pushNum = Integer.parseInt(st.nextToken());
+                }
 
-            queue.execute(command, pushNum, bw);
-
+                queue.execute(command, pushNum, bw);
         }
 
         bw.flush();
@@ -141,7 +140,6 @@ public class QueueProblem {
                 bw.write(-1 + "\n");
             }
         }
-
 
     }
 
