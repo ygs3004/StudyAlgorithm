@@ -1,6 +1,6 @@
 let fs = require('fs');
 
-//const input = fs.readFileSync('').toString().split(' ');
+//const input = fs.readFileSync('')
 
 const logo
 = `       _.-;;-._
@@ -10,8 +10,3 @@ const logo
 '-..-'|_.-''-._|`
 
 console.log(logo);
-
-
-
-
-
