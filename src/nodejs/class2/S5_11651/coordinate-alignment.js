@@ -35,9 +35,10 @@ y좌표가 같으면 x좌표가 증가하는 순서로 정렬한 다음 출력�
 */
 let fs = require('fs');
 const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
-let input = fs.readFileSync("./input.txt").toString().trim();
+let input = fs.readFileSync(filePath).toString().trim();
 let inputLineArr = input.split('\n').map(v => v.trim());
 let n = inputLineArr.shift();
+
 inputLineArr.sort((a, b) => {
     a = a.split(' ');
     b = b.split(' ');
@@ -54,6 +55,7 @@ inputLineArr.sort((a, b) => {
         return ay - by;
     }
 });
+
 let result = ''
 for (let i = 0; i < n; i++) {
     result += inputLineArr[i]+'\n'
