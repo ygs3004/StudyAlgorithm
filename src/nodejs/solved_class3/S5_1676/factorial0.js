@@ -17,6 +17,7 @@ N!에서 뒤에서부터 처음 0이 아닌 숫자가 나올 때까지 0의 개�
 예제 출력 2
 0
 */
+
 const filePath = process.platform === 'linux' ? '/dev/stdin' : './input.txt';
 const n = +require('fs').readFileSync(filePath, 'utf-8').trim();
 let factorial = 1n;
