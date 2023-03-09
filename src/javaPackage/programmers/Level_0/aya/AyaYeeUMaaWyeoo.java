@@ -8,7 +8,6 @@ public class AyaYeeUMaaWyeoo {
         String[] babbling1 = {"aya", "yee", "u", "maa", "wyeoo"};
         String[] babbling2 = {"ayaye", "uuuma", "ye", "yemawoo", "ayaa"};
 
-
         int result1 = solution.solution(babbling1);
         int result2 = solution.solution(babbling2);
 
