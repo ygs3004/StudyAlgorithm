@@ -1,5 +1,7 @@
 package javaPackage.programmers.level_0.wallpaper;
 
+import javaPackage.programmers.Programmers;
+
 public class ClearWallPaper {
 
     public static void main(String[] args) {
@@ -9,21 +11,19 @@ public class ClearWallPaper {
         String[] wallpaper3 = {".##...##.", "#..#.#..#", "#...#...#", ".#.....#.", "..#...#..", "...#.#...", "....#...."};
         String[] wallpaper4 = {"..", "#."};
 
-        Solution solution = new Solution();
-        int[] result1 = solution.solution(wallpaper1);
-        int[] result2 = solution.solution(wallpaper2);
-        int[] result3 = solution.solution(wallpaper3);
-        int[] result4 = solution.solution(wallpaper4);
 
-        System.out.println(result1[0] + " " + result1[1] + " "  + result1[2] + " "  + result1[3]);
-        System.out.println(result2[0] + " " + result2[1] + " "  + result2[2] + " "  + result2[3]);
-        System.out.println(result3[0] + " " + result3[1] + " "  + result3[2] + " "  + result3[3]);
-        System.out.println(result4[0] + " " + result4[1] + " "  + result4[2] + " "  + result4[3]);
+        Solution solution = new Solution();
+
+        solution.result(wallpaper1);
+        solution.result(wallpaper2);
+        solution.result(wallpaper3);
+        solution.result(wallpaper4);
     }
 
 }
 
-class Solution {
+class Solution extends Programmers<int[], String[]>{
+
     public int[] solution(String[] wallpaper) {
 
         int minX = 50;

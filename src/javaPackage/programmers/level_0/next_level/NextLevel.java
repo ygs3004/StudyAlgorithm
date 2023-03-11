@@ -16,20 +16,24 @@ common	result
 */
 package javaPackage.programmers.level_0.next_level;
 
-import javaPackage.Programmers;
+import javaPackage.programmers.ProgrammersInt;
 
 public class NextLevel {
 
     public static void main(String[] args) {
 
         int[] common = {1, 2, 3, 4};
+        int[] common2 = {2, 4, 8};
+        int[] common3 = {1, 2, 4};
 
         new Solution().result(common);
+        new Solution().result(common2);
+        new Solution().result(common3);
     }
 
 }
 
-class Solution extends Programmers{
+class Solution extends ProgrammersInt {
 
     public int solution(int[] common) {
         int gap1 = common[1]-common[0];
@@ -38,7 +42,7 @@ class Solution extends Programmers{
         if(gap1 == gap2){
             return common[common.length-1] + gap1;
         }else{
-            return common[common.length-1] * gap1;
+            return common[common.length-1] * gap2/gap1;
         }
     }
 
