@@ -21,7 +21,7 @@ num1이 27, num2가 19이므로 27 * 19 = 513을 return합니다.
 
 package javaPackage.programmers.level_0.multiply;
 
-import javaPackage.programmers.ProgrammersInt;
+import javaPackage.programmers.excute.ProgrammersInt;
 
 public class Multiply {
     public static void main(String[] args) {

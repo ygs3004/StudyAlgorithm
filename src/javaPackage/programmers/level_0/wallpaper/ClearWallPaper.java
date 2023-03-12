@@ -1,6 +1,6 @@
 package javaPackage.programmers.level_0.wallpaper;
 
-import javaPackage.programmers.Programmers;
+import javaPackage.programmers.excute.Programmers;
 
 public class ClearWallPaper {
 
