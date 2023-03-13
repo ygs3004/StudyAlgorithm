@@ -18,7 +18,16 @@ public abstract class ProgrammersInt {
         return 0;
     }
 
+    public int solution(String[] a){
+        return 0;
+    }
+
     public void result(int[] a) {
+        System.out.println("parameter 1 : "+ Arrays.toString(a));
+        System.out.println("result : " + solution(a));
+    }
+
+    public void result(String[] a) {
         System.out.println("parameter 1 : "+ Arrays.toString(a));
         System.out.println("result : " + solution(a));
     }
