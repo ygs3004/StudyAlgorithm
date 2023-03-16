@@ -20,6 +20,6 @@ public abstract class ProgrammersDouble {
     public void result(int a, int b) {
         System.out.println("parameter 1 : "+ a);
         System.out.println("parameter 2 : "+ b);
-        System.out.println("result : " + solution(a, b));
+        System.out.println("result      : " + solution(a, b));
     }
 }

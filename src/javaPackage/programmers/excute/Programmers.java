@@ -1,16 +1,18 @@
 package javaPackage.programmers.excute;
 
-public abstract class Programmers<R, P> {
+public class Programmers<R, P> {
 
-    public abstract R solution(P p);
+    public R solution(P p){
+        return null;
+    }
 
     public void result(P params){
 
-        R results = solution(params);
+        R result = solution(params);
 
         System.out.println("---------------------------------");
-        System.out.println("parameter : " + printV(params));
-        System.out.println("result : " + printV(results));
+        System.out.println("parameter1 : " + printV(params));
+        System.out.println("result     : " + printV(result));
         System.out.println("---------------------------------");
     }
 
