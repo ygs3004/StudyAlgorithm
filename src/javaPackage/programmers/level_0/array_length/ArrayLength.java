@@ -10,8 +10,6 @@ package javaPackage.programmers.level_0.array_length;
 import javaPackage.programmers.excute.Programmers;
 
 import java.util.Arrays;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class ArrayLength {
 
