@@ -5,7 +5,7 @@ num2번째 인덱스까지 자른 정수 배열을 return 하도록 solution 함
 */
 
 function solution(numbers, num1, num2) {
-    return answer = numbers.splice(num1, num2-num1+1);;
+    return answer = numbers.splice(num1, num2-num1+1);
 }
 
 let numbers1 = [1, 2, 3, 4, 5]; // 1 3
