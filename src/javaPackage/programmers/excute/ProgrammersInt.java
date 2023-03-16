@@ -24,18 +24,18 @@ public abstract class ProgrammersInt {
 
     public void result(int[] a) {
         System.out.println("parameter 1 : "+ Arrays.toString(a));
-        System.out.println("result : " + solution(a));
+        System.out.println("result      : " + solution(a));
     }
 
     public void result(String[] a) {
         System.out.println("parameter 1 : "+ Arrays.toString(a));
-        System.out.println("result : " + solution(a));
+        System.out.println("result      : " + solution(a));
     }
 
     public void result(int[] a, int b) {
         System.out.println("parameter 1 : "+ Arrays.toString(a));
         System.out.println("parameter 2 : "+ b);
-        System.out.println("result : " + solution(a, b));
+        System.out.println("result      : " + solution(a, b));
     }
 
     public void result(int a) {
