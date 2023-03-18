@@ -38,7 +38,6 @@ public abstract class ProgrammersInt {
         System.out.println("result      : " + solution(a, b));
     }
 
-
     public void result(int[] a, int b) {
         System.out.println("parameter 1 : "+ Arrays.toString(a));
         System.out.println("parameter 2 : "+ b);

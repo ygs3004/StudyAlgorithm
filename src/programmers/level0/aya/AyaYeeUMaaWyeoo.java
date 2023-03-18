@@ -13,9 +13,6 @@ public class AyaYeeUMaaWyeoo {
         solution.result(babbling2);
         System.out.println("--------------------------------------------------");
 
-        new Solution2().result(babbling1);
-        new Solution2().result(babbling2);
-
     }
 
 }
@@ -38,13 +35,4 @@ class Solution extends ProgrammersInt {
 
         return answer;
     }
-}
-
-
-class Solution2 extends ProgrammersInt{
-
-    public int solution(String[] babbling) {
-        return 0;
-    }
-
 }

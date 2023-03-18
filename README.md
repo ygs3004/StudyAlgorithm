@@ -7,5 +7,5 @@
 
 ## Programmers
     execute : Java 실행 클래스
-    level:난이도
-    
+    level : 난이도
+    숫자 : 문제 url 정보
