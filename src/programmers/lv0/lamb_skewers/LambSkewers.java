@@ -27,6 +27,7 @@ import programmers.excute.ProgrammersInt;
 public class LambSkewers {
 
     public static void main(String[] args) {
+
         new Solution().result(10, 3);
         new Solution().result(64, 6);
 

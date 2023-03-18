@@ -1,4 +1,4 @@
-package programmers.lv0_120889;
+package programmers.lv0.lv0_120889;
 
 import java.util.*;
 class Solution {
