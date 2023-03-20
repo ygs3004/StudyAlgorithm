@@ -25,7 +25,7 @@ class Solution {
         
         if(number.length() > 0) sum += Integer.parseInt(number);
         
-         return sum;
+        return sum;
         
     }
     
