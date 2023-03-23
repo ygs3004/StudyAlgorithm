@@ -1,4 +1,7 @@
 # StudyAlgorithm
+
+## 백준 허브이용 자동푸시 src / baekjoon or programmers / lv 
+
 ## backjoon 
  ####  A 패키지: Do it 알고리즘 코딩 테스트 
  #### solved pakcage: solved.ac 사이트 레벨문제
