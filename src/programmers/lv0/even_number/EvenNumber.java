@@ -7,7 +7,7 @@ solution 함수를 완성해주세요.
 
 package programmers.lv0.even_number;
 
-import programmers.excute.Programmers;
+import programmers.lv0.excute.Programmers;
 
 import java.util.Arrays;
 import java.util.stream.IntStream;

@@ -1,6 +1,6 @@
 package programmers.lv0.silmilarity;
 
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 
 import java.util.Arrays;
 

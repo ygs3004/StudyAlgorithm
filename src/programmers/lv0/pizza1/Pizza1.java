@@ -8,7 +8,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120814
 
 package programmers.lv0.pizza1;
 
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 
 public class Pizza1 {
 

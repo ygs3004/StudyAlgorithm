@@ -21,7 +21,7 @@ numbers의 원소들의 평균 값은 94.0입니다.
 
 package programmers.lv0.array_avg;
 
-import programmers.excute.ProgrammersDouble;
+import programmers.lv0.excute.ProgrammersDouble;
 
 public class ArrayAvg {
 

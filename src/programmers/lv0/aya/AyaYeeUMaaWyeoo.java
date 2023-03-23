@@ -1,6 +1,6 @@
 package programmers.lv0.aya;
 
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 public class AyaYeeUMaaWyeoo {
 
     public static void main(String[] args) {

@@ -21,7 +21,7 @@ num1이 27, num2가 19이므로 27 * 19 = 513을 return합니다.
 
 package programmers.lv0.multiply;
 
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 
 public class Multiply {
     public static void main(String[] args) {

@@ -22,7 +22,7 @@ n	k	result
 
 package programmers.lv0.lamb_skewers;
 
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 
 public class LambSkewers {
 

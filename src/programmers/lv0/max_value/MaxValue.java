@@ -4,7 +4,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120847
 */
 
 package programmers.lv0.max_value;
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 
 import java.util.*;
 public class MaxValue {

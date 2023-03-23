@@ -1,6 +1,6 @@
 package programmers.lv0.wallpaper;
 
-import programmers.excute.Programmers;
+import programmers.lv0.excute.Programmers;
 
 public class ClearWallPaper {
 

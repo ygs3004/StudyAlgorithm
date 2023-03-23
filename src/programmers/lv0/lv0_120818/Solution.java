@@ -1,3 +1,5 @@
+package programmers.lv0.lv0_120818;
+
 class Solution {
     public int solution(int price) {
         if(price >= 100000 && price<300000){

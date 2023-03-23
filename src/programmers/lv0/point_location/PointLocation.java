@@ -29,7 +29,7 @@ dot이 [-7, 9]로 x 좌표가 음수, y 좌표가 양수이므로 제 2 사분�
 
 package programmers.lv0.point_location;
 
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 
 public class PointLocation {
 

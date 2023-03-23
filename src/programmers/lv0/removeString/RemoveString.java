@@ -8,7 +8,7 @@ https://school.programmers.co.kr/learn/courses/30/lessons/120826
 
 package programmers.lv0.removeString;
 
-import programmers.excute.Programmers2;
+import programmers.lv0.excute.Programmers2;
 
 public class RemoveString {
 

@@ -16,7 +16,7 @@ common	result
 */
 package programmers.lv0.next_level;
 
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 
 public class NextLevel {
 

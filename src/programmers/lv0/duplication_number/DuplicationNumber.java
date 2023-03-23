@@ -21,7 +21,7 @@ array	n	result
 
 package programmers.lv0.duplication_number;
 
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -23,7 +23,7 @@ slice	n	result
 
 package programmers.lv0.pizza3;
 
-import programmers.excute.ProgrammersInt;
+import programmers.lv0.excute.ProgrammersInt;
 
 public class Pizza3 {
 
