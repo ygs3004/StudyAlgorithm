@@ -11,10 +11,9 @@ class Solution {
         
         for(char a : sArr){
             check = a == 'p' ? check+1 : a == 'y' ? check-1 : check;
-            System.out.println(check);
         }
         
-        return check == 0 ? true : false;
+        return check == 0;
     }
     
 }
