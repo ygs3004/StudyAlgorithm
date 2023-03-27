@@ -19,12 +19,9 @@ class Solution {
                           return a.charAt(i) - b.charAt(i);
                       }
                   }
-                  
                   return 0;
                 }
-                
             }
-            
         });
         
         return strings;
