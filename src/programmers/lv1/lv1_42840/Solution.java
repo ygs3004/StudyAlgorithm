@@ -17,23 +17,13 @@ class Solution {
             if(answers[i] == arr3[i%10]) count3++;
         }
         
-        int[] result = {};
-        
-        if(count1 == count2 && count2 == count3){
-            return new int[]{1,2,3};  
-        } else if(count1 > count2 & count1 > count3){
-            return new int[]{1};  
-        } else if(count2 > count1 & count2 > count3){
-            return new int[]{2};  
-        } else if(count3 > count1 & count3 > count2){
-            return new int[]{3};  
-        } else if(count1 == count2){
-            return new int[]{1,2};  
-        } else if(count1 == count3){
-            return new int[]{1,3};
-        }else{
-            return new int[]{2,3};
-        }
+        if(count1 == count2 && count2 == count3) return new int[]{1,2,3};  
+        else if(count1 > count2 & count1 > count3) return new int[]{1};  
+        else if(count2 > count1 & count2 > count3) return new int[]{2};  
+        else if(count3 > count1 & count3 > count2) return new int[]{3};  
+        else if(count1 == count2) return new int[]{1,2};  
+        else if(count1 == count3) return new int[]{1,3};
+        else return new int[]{2,3};
     }
     
 }
