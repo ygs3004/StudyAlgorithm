@@ -9,8 +9,6 @@ class Solution {
         int[] distinctArr = Arrays.stream(nums).distinct().toArray();
         int a = distinctArr.length;
         int answer = 1;
-
-        System.out.println(nums.length/2);
         
         if(nums.length/2 >= a){
             answer = a;
