@@ -10,7 +10,6 @@ class Solution {
             if(number[i]) continue;
             answer++;
             for(int j=i; j<=n; j+=i){
-                if(number[j]) continue;
                 number[j] = true;
             }
         }
