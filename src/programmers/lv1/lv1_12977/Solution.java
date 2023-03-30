@@ -10,7 +10,7 @@ class Solution {
         int max = nums[nums.length-1]+nums[nums.length-2]+nums[nums.length-3];
         boolean[] decimal = new boolean[max+1];
         
-        for(int i= 2; i<max+1; i++){
+        for(int i= 2; i<=Math.sqrt(max+1); i++){
             if(decimal[i]) continue;
             for(int j=i*2; j<max+1; j+=i){
                 decimal[j] = true;
