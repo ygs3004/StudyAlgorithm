@@ -13,12 +13,10 @@ class Solution {
             map.put(name[i], yearning[i]);
         }
         
-        int score = 0;
         for(int i=0; i<photo.length; i++){
-            score = 0;
+            int score = 0;
             for(int j=0; j<photo[i].length; j++){
-                if(map.get(photo[i][j]) != null)
-                score += map.get(photo[i][j]);    
+                score += map.getOrDefault(photo[i][j], 0);    
             }
             answer[i] = score;
         }
