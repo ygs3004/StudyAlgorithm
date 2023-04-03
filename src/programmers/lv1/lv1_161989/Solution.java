@@ -10,7 +10,6 @@ class Solution {
         for(int block : section){
             wall[block] = true;
         }
-        
         int start = section[0];
         int answer = 0;
         
@@ -26,9 +25,7 @@ class Solution {
                     if(start == wall.length-1) break;
                 }                
             }
-
         }
-        
         return answer;
     }
     
