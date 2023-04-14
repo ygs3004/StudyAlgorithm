@@ -28,7 +28,7 @@ class Solution {
         }
         
         if(new_id.length()==0){
-            new_id += "aaa";
+            return "aaa";
         }
         
         if(new_id.length() >= 16){
