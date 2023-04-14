@@ -2,9 +2,7 @@ package programmers.lv1.lv1_72410;
 
 class Solution {
     public String solution(String new_id) {
-        
-        int saveLength = new_id.length();
-        
+
         new_id = new_id.toLowerCase();
         String[] test = {"~", "!", "@", "#", "[$]", "%", "\\^", "&", "[*]", "\\(", "\\)", "=", 
                           "[+]", "\\[", "\\]", "\\{", "\\}", ":", "\\?", ",", "<", ">","/"};
@@ -30,9 +28,7 @@ class Solution {
         }
         
         if(new_id.length()==0){
-            //for(int i=0; i<saveLength; i++){
-                new_id += "aaa";
-            //}
+            new_id += "aaa";
         }
         
         if(new_id.length() >= 16){
