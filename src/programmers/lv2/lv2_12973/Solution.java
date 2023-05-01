@@ -13,9 +13,7 @@ class Solution{
                 stack.push(s.charAt(i));
             }
         }
-        while(stack.size()>=2){
-            if(!stack.pop().equals(stack.pop())) return 0;
-        }
+
         return stack.isEmpty() ? 1 : 0;
     }
 }
