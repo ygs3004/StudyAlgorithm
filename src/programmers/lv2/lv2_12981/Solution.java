@@ -17,10 +17,6 @@ class Solution {
             }
             searchIdx = search(words, i+1, endIdx, words[i]);
             if(searchIdx > 0){
-                System.out.println(i);
-                System.out.println(endIdx);
-                System.out.println(answerIdx);
-                System.out.println(searchIdx);
                 answerIdx = Math.min(searchIdx, answerIdx);
             }
         }
