@@ -17,11 +17,7 @@ class Solution {
             a = b;
             b = temp;
         }
-        if(a%b == 0){
-            return b;
-        }else{
-            return gcd(b, a%b);
-        }
+        return a%b == 0 ? b : gcd(b, a%b);
     }
     
     public static int lcm(int a, int b){
