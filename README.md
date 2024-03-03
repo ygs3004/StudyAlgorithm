@@ -1,5 +1,8 @@
 # StudyAlgorithm
 
+## 2024-03 이후 백준허브 기본디렉토리 루트 사용
+
+## 2024-01 이전 내용
 ## 백준 허브이용 자동푸시 src / baekjoon or programmers / lv 
 
 ## backjoon 
