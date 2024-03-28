@@ -1,0 +1,19 @@
+SELECT CASE WHEN MONTH(DIFFERENTIATION_DATE) < '04' 
+            THEN '1Q'
+            WHEN MONTH(DIFFERENTIATION_DATE) < '07' 
+            THEN '2Q'
+            WHEN MONTH(DIFFERENTIATION_DATE) < '10' 
+            THEN '3Q'
+            ELSE '4Q'
+            END AS QUARTER
+     , COUNT(*) AS ECOLI_COUNT
+  FROM ECOLI_DATA
+ GROUP BY (CASE WHEN MONTH(DIFFERENTIATION_DATE) < '04' 
+            THEN '1Q'
+            WHEN MONTH(DIFFERENTIATION_DATE) < '07' 
+            THEN '2Q'
+            WHEN MONTH(DIFFERENTIATION_DATE) < '10' 
+            THEN '3Q'
+            ELSE '4Q'
+            END)
+ ORDER BY QUARTER
