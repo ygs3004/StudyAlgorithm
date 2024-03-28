@@ -1,0 +1,16 @@
+SELECT HG.SCORE
+     , HE.EMP_NO
+     , HE.EMP_NAME
+     , HE.POSITION
+     , HE.EMAIL
+  FROM HR_EMPLOYEES HE
+  JOIN (SELECT SUM(HG.SCORE) AS SCORE
+             , HG.EMP_NO
+          FROM HR_GRADE HG
+         WHERE HG.YEAR = '2022' 
+         GROUP BY HG.EMP_NO
+         ORDER BY SUM(HG.SCORE) DESC
+         LIMIT 1) HG ON HE.EMP_NO = HG.EMP_NO
+
+
+ 
