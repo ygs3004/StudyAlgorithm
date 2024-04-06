@@ -12,13 +12,13 @@ class Solution {
        
         for(int i=0; i < dungeonList.size(); i++){
             boolean[] visited = new boolean[dungeonList.size()];
-            searchDungeon(i, 0, totalEnergy, visited, "");
+            searchDungeon(i, 0, totalEnergy, visited);
         }
         
         return maxCount;
     }
    
-    private void searchDungeon(int index, int count, int totalEnergy, boolean[] visited, String list){
+    private void searchDungeon(int index, int count, int totalEnergy, boolean[] visited){
         if(visited[index]) return;
         
         visited[index] = true;
@@ -27,17 +27,15 @@ class Solution {
         count++;
         totalEnergy -= dungeonList.get(index).useEnergy;
         maxCount = Math.max(count, maxCount);
-        list += " " + index;
 
         for(int i=0; i<dungeonList.size(); i++){
             if(visited[i] == false){
-                searchDungeon(i, count, totalEnergy, visited, list);   
+                searchDungeon(i, count, totalEnergy, visited);   
                 visited[i] = false;    
             }
         }
     }
-    
-        
+            
     private class Dungeon{
         int minEnergy;
         int useEnergy;
