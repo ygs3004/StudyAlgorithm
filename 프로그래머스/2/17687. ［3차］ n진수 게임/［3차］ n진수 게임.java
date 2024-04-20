@@ -16,14 +16,13 @@ class Solution {
     
     private void initAnswer(int n){
         int index = 0;
-        for(int i=0; i<maxSize; i++){
+        loop : for(int i=0; i<maxSize; i++){
             String integerN = Integer.toString(i, n);
             String[] answerArr = integerN.split("");
             for(String answer: answerArr){
                 answerList[index++] = answer.toUpperCase();
-                if(index == maxSize) break;
+                if(index == maxSize) break loop;
             }
-            if(index == maxSize) break;
         }
     }
     
