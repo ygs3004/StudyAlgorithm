@@ -1,9 +1,10 @@
 class Solution {
     
     private String[] answerList;
-    private int maxSize = 100*1000;
+    private int maxSize;
     
     public String solution(int n, int answerSize, int peopleSize, int seq) {
+        maxSize = (answerSize-1)*peopleSize + seq;
         answerList = new String[maxSize];
         initAnswer(n);
         StringBuilder result = new StringBuilder();
