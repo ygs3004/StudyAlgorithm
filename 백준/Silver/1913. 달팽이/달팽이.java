@@ -24,23 +24,19 @@ public class Main {
         int targetRow = rowIdx + 1;
         int targetCol = colIdx + 1;
 
+        int[] directionRow = new int[]{0, 1, 0, -1};
+        int[] directionCol = new int[]{1, 0, -1, 0};
+
         for(int i = 1; i <= n; i = i+2){
             int directionCycle =  i - 1;
 
             for(int j = 0; j < directionCycle * 4; j++){
-                int directionCase = j/directionCycle;
-                if(directionCase == 0){
-                    moveRight();
 
-                }else if(directionCase == 1){
-                    moveDown();
+                // 0: Right, 1: Down, 2: Left, 3: Up
+                int direction = j/directionCycle;
+                rowIdx += directionRow[direction];
+                colIdx += directionCol[direction];
 
-                }else if(directionCase == 2){
-                    moveLeft();
-
-                }else if(directionCase == 3){
-                    moveUp();
-                }
                 if(number == target){
                     targetRow = rowIdx + 1;
                     targetCol = colIdx + 1;
@@ -49,8 +45,8 @@ public class Main {
                 snail[rowIdx][colIdx] = number++;
             }
 
-            moveUp();
-            moveLeft();
+            rowIdx += directionRow[3];
+            colIdx += directionCol[2];
         }
 
         StringBuilder snailString = new StringBuilder();
@@ -65,19 +61,4 @@ public class Main {
         System.out.print(targetRow + " " + targetCol);
     }
 
-    private static void moveUp(){
-        rowIdx--;
-    }
-
-    private static void moveRight(){
-        colIdx++;
-    }
-
-    private static void moveDown(){
-        rowIdx++;
-    }
-
-    private static void moveLeft(){
-        colIdx--;
-    }
 }
