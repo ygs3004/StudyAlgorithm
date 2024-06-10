@@ -33,12 +33,22 @@ class Solution {
             for(int i = 0; i + j < numbers.length; i++){
                 for(int k = 0; k < j; k++){
                     String oper = operations[i + k];
-                    int max1 = calc(max[i][i + k], max[i + k + 1][i + j], oper);
-                    int max2 = calc(max[i][i + k], min[i + k + 1][i + j], oper);
-                    int min1 = calc(min[i][i + k], min[i + k + 1][i + j], oper);
-                    int min2 = calc(min[i][i + k], max[i + k + 1][i + j], oper);
-                    max[i][i + j] = Math.max(max[i][i + j], Math.max(max1, max2));
-                    min[i][i + j] = Math.min(min[i][i + j], Math.min(min1, min2));
+                    int start = i;
+                    int end = i + j;
+                    int mid = i + k;
+                    
+                    int maxValue = 0;
+                    int minValue = 0;
+                    if(oper.equals("+")){
+                        maxValue = max[start][mid] + max[mid + 1][end];
+                        minValue = min[start][mid] + min[mid + 1][end];
+                    } else {
+                        maxValue = max[start][mid] - min[mid + 1][end]; 
+                        minValue = min[start][mid] - max[mid + 1][end]; 
+                    }
+                    
+                    max[start][end] = Math.max(max[start][end], maxValue);
+                    min[start][end] = Math.min(min[start][end], minValue);
                 }
             }
         }
@@ -46,22 +56,5 @@ class Solution {
         int answer = max[0][numbers.length - 1];
         return answer;
     }
-    
-    private int calc(int num1, int num2, String oper){
-        int result = 0;
-        switch(oper){
-            case "+" :
-                result = num1 + num2;
-                break;
-            case "-":
-                result = num1 - num2;
-        }
-        return result;
-    }
-    
-    private void printArrays(int[][] arrays){
-        for(int[] arr: arrays){
-            System.out.println(Arrays.toString(arr));
-        }
-    }
+
 }
