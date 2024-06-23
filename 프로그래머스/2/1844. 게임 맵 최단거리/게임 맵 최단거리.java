@@ -1,57 +1,58 @@
 import java.util.*;
 
-class Solution {
-    
-    int answer = Integer.MAX_VALUE;
-    
+public class Solution {
+
+    int answer;
+    static final int WALL = 0;
+
     public int solution(int[][] maps) {
-        
-        Queue<int[]> queue = new LinkedList<>();
-        Queue<Integer> stepQueue = new LinkedList<>();
-        queue.add(new int[]{0, 0});
-        maps[0][0] = 0;
-        stepQueue.add(1);
-        int xMax = maps.length - 1;
-        int yMax = maps[0].length - 1;
-        int count = 1;
-        
-        while(!queue.isEmpty()){
-            
-            int[] now = queue.poll();
-            int nowStep = stepQueue.poll();
-            int nextStep = nowStep + 1;
-            int nowX = now[0];
-            int nowY = now[1];
-            
-            if(nowX == xMax && nowY == yMax){
-                answer = nowStep;
+
+        answer = Integer.MAX_VALUE;
+        Queue<Point> que = new LinkedList<>();
+        que.add(new Point(0, 0, 1));
+
+        maps[0][0] = WALL;
+        int goalX = maps.length - 1;
+        int goalY = maps[0].length - 1;
+
+        int[] dx = {-1, 0, 1, 0};
+        int[] dy = {0, -1, 0, 1};
+
+        while(!que.isEmpty()){
+            Point now = que.poll();
+            int nowX = now.x;
+            int nowY = now.y;
+            int nowTurn = now.turn;
+
+            if(nowX == goalX && nowY == goalY){
+                answer = nowTurn;
                 break;
             }
-            
-            if(nowX-1 >= 0 && maps[nowX-1][nowY] == 1){
-                maps[nowX-1][nowY] = 0;
-                queue.add(new int[]{nowX-1,nowY});
-                stepQueue.add(nextStep);
+
+            for (int i = 0; i < 4; i++) {
+                int nextX = nowX + dx[i];
+                int nextY = nowY + dy[i];
+                boolean isValidIdx = nextX >= 0 && nextY >= 0 && nextX <= goalX && nextY <= goalY;
+                if (isValidIdx && maps[nextX][nextY] != WALL) {
+                    maps[nextX][nextY] = WALL;
+                    que.add(new Point(nextX, nextY, nowTurn + 1));
+                }
             }
-            if(nowX+1 <= xMax && maps[nowX+1][nowY] == 1){
-                maps[nowX+1][nowY] = 0;
-                queue.add(new int[]{nowX+1,nowY});
-                stepQueue.add(nextStep);
-            }
-            if(nowY-1 >= 0 && maps[nowX][nowY-1] == 1){
-                maps[nowX][nowY-1] = 0;
-                queue.add(new int[]{nowX,nowY-1});
-                stepQueue.add(nextStep);
-            }
-            if(nowY+1 <= yMax && maps[nowX][nowY+1] == 1){
-                maps[nowX][nowY+1] = 0;
-                queue.add(new int[]{nowX,nowY+1});
-                stepQueue.add(nextStep);
-            }
-             
         }
-                
+
         return answer == Integer.MAX_VALUE ? -1 : answer;
     }
-    
+
+    private static class Point{
+        int x;
+        int y;
+        int turn;
+
+        Point(int x, int y, int turn){
+            this.x = x;
+            this.y = y;
+            this.turn = turn;
+        }
+    }
+
 }
