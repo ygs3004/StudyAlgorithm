@@ -17,20 +17,20 @@ class Solution {
             int size = bridgeTruck.size();
             for(int i=0; i<size; i++){
                 Truck truck = bridgeTruck.poll();
-                bridgeWeight -= truck.weight;
                 truck.move();
                 if(!truck.isArrive()){
-                    bridgeTruck.add(truck);
-                    bridgeWeight += truck.weight;                            
+                    bridgeTruck.add(truck);                     
+                    continue;
                 }
+                
+                bridgeWeight -= truck.weight;
             }
             
-            Truck newTruck = null;
             if(!weightTruck.isEmpty() 
                && (maxWeight >= (weightTruck.peek().weight + bridgeWeight))
                && (bridgeTruck.size() <= bridgeLength)
               ){
-                newTruck = weightTruck.pop();
+                Truck newTruck = weightTruck.pop();
                 bridgeWeight += newTruck.weight;
                 bridgeTruck.add(newTruck);
                 newTruck.move();
