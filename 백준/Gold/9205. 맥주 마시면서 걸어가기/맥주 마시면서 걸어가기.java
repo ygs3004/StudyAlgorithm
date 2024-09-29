@@ -53,7 +53,7 @@ public class Main {
             }
         }
 
-        // home.isVisited = true;
+        home.isVisited = true;
         // boolean isArriveFestival = checkArriveDfs(home);
         Stack<Point> stack = new Stack<>();
         stack.push(home);
