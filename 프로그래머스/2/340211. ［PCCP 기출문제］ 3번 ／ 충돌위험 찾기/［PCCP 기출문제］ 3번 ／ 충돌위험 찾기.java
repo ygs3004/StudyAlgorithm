@@ -4,26 +4,16 @@ class Solution {
     public int solution(int[][] points, int[][] routes) {
         int robotCnt = routes.length;
         int arriveCnt = 0;
+       
         Robot[] robots = new Robot[robotCnt];
         for(int i = 0; i < robotCnt; i++){
             int[] robotRoute = routes[i];          
             robots[i] = new Robot(robotRoute, points);
         }
-        
+
+        boolean checkStart = false;
         int answer = 0;
         HashMap<Point, Integer> check = new HashMap<>();
-        for(int i = 0; i < robots.length; i++){
-            Robot robot = robots[i];
-            if(robot.isArrived()) continue;
-            check.compute(robots[i].curPoint, (key, value) -> value == null ? 1 : value + 1);
-            // System.out.println(robots[i].curPoint.r + " " + robots[i].curPoint.c);
-        }
-        // System.out.println("=======================================");
-        
-        for(Integer sameCnt : check.values()){
-            if(sameCnt > 1) answer++;
-        }
-        
         while(arriveCnt != robotCnt){
             arriveCnt = 0;
             check.clear();
@@ -34,15 +24,18 @@ class Solution {
                     continue;
                 } 
                 
-                robots[i].move();
-                check.compute(robots[i].curPoint, (key, value) -> value == null ? 1 : value + 1);
-                // System.out.println(robots[i].curPoint.r + " " + robots[i].curPoint.c);
+                if(checkStart){
+                    robot.move();    
+                }
+                
+                check.compute(robot.curPoint, (key, value) -> value == null ? 1 : value + 1);
             }
-            // System.out.println("=======================================");
             
             for(Integer sameCnt : check.values()){
                 if(sameCnt > 1) answer++;
             }
+            
+            if(!checkStart) checkStart = true;
         }
         
         return answer;
