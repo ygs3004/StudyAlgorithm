@@ -16,13 +16,17 @@ class Solution {
             
             for(int j = 0; j < triangle[i].length; j++){
                 int bestSum = 0;
+                
                 if(j == 0){
                     bestSum = triangle[i][j] + beforeFloor.get(j);
+                    
                 }else if(j == triangle[i].length - 1){
                     bestSum = triangle[i][j] + beforeFloor.get(j - 1);
+                    
                 }else{
                     bestSum = triangle[i][j] + Math.max(beforeFloor.get(j), beforeFloor.get(j - 1));
                 }
+                
                 curFloor.add(bestSum);
             }
         }
