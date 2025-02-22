@@ -4,8 +4,7 @@ class Solution {
     
     public int solution(int[] players, int m, int k) {
         List<Server> servers = new ArrayList<>();
-        Server defaultServer = new Server();
-        defaultServer.remain = 24;
+        Server defaultServer = new Server(24);
         servers.add(defaultServer);
         
         List<Integer> endServers = new ArrayList<>();
@@ -19,8 +18,7 @@ class Solution {
             
             if(player >= 0){
                 while(player >= 0){
-                    Server newServer = new Server();
-                    newServer.remain = k;
+                    Server newServer = new Server(k);
                     servers.add(newServer);
                     answer++;
                     player -= m;
@@ -44,6 +42,10 @@ class Solution {
     
     private class Server{
         int remain;
+        
+        Server(int remain){
+            this.remain = remain;
+        }
     }
     
 }
