@@ -2,6 +2,7 @@ import java.util.*;
 
 class Solution {
     
+    int n;
     int[] numbers;
     int answerLength;
     Checker checker;
@@ -10,13 +11,11 @@ class Solution {
     public int solution(int n, int[][] q, int[] ans) {
         answerLength = q[0].length;
         this.checker = new Checker(q, ans);
-        answer = 0;
-        numbers = new int[n];
-        
-        for(int i = 0; i < n; i++){
-            numbers[i] = i + 1;
-        }
-        
+        this.n = n;
+        this.answer =0;
+
+
+        // 조합으로 만들어진 숫자를 저장할 배열
         int[] made = new int[answerLength];
         dfs(made, -1, -1);
 
@@ -33,14 +32,17 @@ class Solution {
         }
         
         depth++;
-        for(int i = before + 1; i < numbers.length; i++){
-            made[depth] = numbers[i];
+        // 마지막으로 입력된 숫자 기준보다 큰 숫자를 기준으로 순회(조합)
+        for(int i = before + 1; i < this.n; i++){
+            made[depth] = i + 1;
             dfs(made, i, depth);
         }
     }
     
     private class Checker{
+        // int[][] q
         int[][] caseNumbers;
+        // int[] ans
         int[] caseCounts;
         
         Checker(int[][] caseNumbers, int[] caseCounts){
@@ -48,8 +50,8 @@ class Solution {
             this.caseCounts = caseCounts;
         }
         
+        // 만들어진 숫자 배열이 조건에 부합하는지 체크
         boolean isPass(int[] arr){
-            
             for(int i = 0; i < caseNumbers.length; i++){
                 int[] caseNumber = caseNumbers[i];
                 int caseCount = caseCounts[i];
