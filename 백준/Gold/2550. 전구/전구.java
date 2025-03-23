@@ -28,7 +28,7 @@ public class Main {
         int[] positions = new int[cnt];
         Arrays.fill(lis, Integer.MAX_VALUE);
         for(int i = 0; i < cnt; i++){
-            int lisIdx = lisBinarySearch(lis, switchBulbSeq[i]);
+            int lisIdx = binarySearchForLIS(lis, switchBulbSeq[i]);
             lis[lisIdx] = switchBulbSeq[i];
             maxBulbCnt = Math.max(maxBulbCnt, lisIdx + 1);
             positions[i] = lisIdx;
@@ -52,11 +52,7 @@ public class Main {
         return Arrays.stream(readLine.split(" ")).map(Integer::parseInt).collect(Collectors.toList());
     }
 
-    private static int lisBinarySearch(int[] lis, int seqNum){
-        // if(seqNum > lis[maxBulbCnt - 1]){
-        //     lis[maxBulbCnt] = seqNum;
-        //     return maxBulbCnt;
-        // }
+    private static int binarySearchForLIS(int[] lis, int seqNum){
 
         int left = 0;
         int right = maxBulbCnt - 1;
