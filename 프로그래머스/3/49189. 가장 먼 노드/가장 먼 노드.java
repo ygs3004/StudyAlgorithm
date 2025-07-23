@@ -1,10 +1,9 @@
 import java.util.*;
 
 class Solution {
-    final int MAX_NODE = 20_000;
     
     public int solution(int n, int[][] edge) {
-        List[] graphs = new List[MAX_NODE + 1];
+        List[] graphs = new List[n + 1];
         
         for(int[] info : edge){
             int node1 = info[0];
@@ -18,7 +17,7 @@ class Solution {
         }
         
         Queue<NodeDist> queue = new ArrayDeque<>();
-        boolean[] visited = new boolean[MAX_NODE + 1];
+        boolean[] visited = new boolean[n + 1];
         queue.add(new NodeDist(1, 0));
         
         int maxDist = 0;
