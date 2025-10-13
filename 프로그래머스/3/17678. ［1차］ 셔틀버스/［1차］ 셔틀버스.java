@@ -36,15 +36,8 @@ class Solution {
             }else if(i == n - 1){
                 answer = minToTime(busTimeMin);
             }
-            
-            // System.out.println("seq: " + seq);
-            // System.out.println("remain: " + remain);
+
         }
-        
-        // System.out.println(fullCount);
-        // if(fullCount == n){
-        //     answer = minToTime(timeToMin(timetable[0]) - 1);
-        // }
         
         return answer;
     }
