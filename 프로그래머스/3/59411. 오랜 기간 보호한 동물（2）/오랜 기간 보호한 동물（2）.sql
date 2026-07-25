@@ -1,0 +1,13 @@
+SELECT ANIMAL_ID
+      ,NAME
+  FROM (
+        SELECT (AO.DATETIME - AI.DATETIME) AS PERIOD
+              ,AI.ANIMAL_ID
+              ,AI.NAME
+          FROM ANIMAL_OUTS AO
+          JOIN ANIMAL_INS  AI ON AO.ANIMAL_ID = AI.ANIMAL_ID
+         ORDER BY PERIOD DESC
+       )
+ WHERE ROWNUM <= 2
+
+ 
