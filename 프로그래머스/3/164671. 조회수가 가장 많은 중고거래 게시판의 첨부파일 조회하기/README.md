@@ -1,10 +1,10 @@
 # [level 3] 조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기 - 164671 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/164671) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/164671?language=oracle) 
 
 ### 성능 요약
 
-메모리: 0.0 MB, 시간: 0.00 ms
+메모리: undefined, 시간: 
 
 ### 구분
 
@@ -12,11 +12,11 @@
 
 ### 채점결과
 
-Empty
+합계: 100.0 / 100.0
 
 ### 제출 일자
 
-2024년 03월 27일 21:05:02
+2026년 08월 03일 22:22:08
 
 ### 문제 설명
 
