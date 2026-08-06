@@ -1,0 +1,24 @@
+WITH CR AS (
+    SELECT ((CR.DAILY_FEE * 30) * (100 - CDP.DISCOUNT_RATE)/100) AS FEE
+          ,CR.CAR_ID
+          ,CR.CAR_TYPE
+      FROM CAR_RENTAL_COMPANY_CAR CR
+      LEFT JOIN CAR_RENTAL_COMPANY_DISCOUNT_PLAN CDP ON CR.CAR_TYPE = CDP.CAR_TYPE
+                                                    AND CDP.DURATION_TYPE = '30일 이상'
+     WHERE (CR.CAR_TYPE = '세단' OR CR.CAR_TYPE = 'SUV')
+       AND ((CR.DAILY_FEE * 30) * (100 - CDP.DISCOUNT_RATE)/100) >= 500000 
+       AND ((CR.DAILY_FEE * 30) * (100 - CDP.DISCOUNT_RATE)/100) < 2000000
+)
+SELECT CR.CAR_ID
+      ,CR.CAR_TYPE
+      ,CR.FEE
+  FROM CR CR
+ WHERE NOT EXISTS(SELECT 1
+                    FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY CRH
+                   WHERE CR.CAR_ID = CRH.CAR_ID
+                     AND CRH.END_DATE >= TO_DATE('2022-11-01', 'YYYY-MM-DD')
+                     AND CRH.START_DATE <= TO_DATE('2022-11-30', 'YYYY-MM-DD')
+           )  
+ ORDER BY FEE DESC
+         ,CAR_TYPE 
+         ,CAR_ID DESC
