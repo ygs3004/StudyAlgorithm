@@ -1,0 +1,15 @@
+WITH CTE AS (
+    SELECT LEVEL -1 AS HOUR
+      FROM DUAL
+   CONNECT BY LEVEL <= 24
+)
+SELECT T.HOUR
+      ,COALESCE(S.COUNT, 0) AS COUNT
+  FROM CTE T
+  LEFT JOIN (
+             SELECT TO_NUMBER(TO_CHAR(DATETIME, 'HH24')) HOUR
+                   ,COUNT(1) AS COUNT
+               FROM ANIMAL_OUTS
+              GROUP BY HOUR
+            ) S ON T.HOUR = S.HOUR
+ ORDER BY 1
