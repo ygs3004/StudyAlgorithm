@@ -12,12 +12,12 @@ SELECT CRH.HISTORY_ID
   FROM CRH CRH
   JOIN CAR_RENTAL_COMPANY_CAR CC ON CC.CAR_ID = CRH.CAR_ID
   LEFT JOIN CAR_RENTAL_COMPANY_DISCOUNT_PLAN CDP ON CDP.CAR_TYPE = CC.CAR_TYPE
-                                                AND CASE WHEN CRH.RENTAL_PERIOD >= 7 AND CRH.RENTAL_PERIOD < 30
-                                                         THEN CDP.DURATION_TYPE = '7일 이상'
-                                                         WHEN CRH.RENTAL_PERIOD >= 30 AND CRH.RENTAL_PERIOD < 90
-                                                         THEN CDP.DURATION_TYPE = '30일 이상'
-                                                         WHEN CRH.RENTAL_PERIOD >= 90
+                                                AND CASE WHEN CRH.RENTAL_PERIOD >= 90
                                                          THEN CDP.DURATION_TYPE = '90일 이상'
+                                                         WHEN CRH.RENTAL_PERIOD >= 30
+                                                         THEN CDP.DURATION_TYPE = '30일 이상'
+                                                         WHEN CRH.RENTAL_PERIOD >= 7
+                                                         THEN CDP.DURATION_TYPE = '7일 이상'
                                                          ELSE FALSE 
                                                      END     
  WHERE CC.CAR_TYPE = '트럭'
